@@ -16,6 +16,7 @@ pip install -r requirements.txt
 
 ## Catalog
 
+```
 └─simulator
     │  architecture.png
     │  display.ipynb
@@ -50,4 +51,4 @@ pip install -r requirements.txt
         │  │  file_J.py
         │  │  getIsingEnergy.py
         │  │  __init__.py
-        
+```
