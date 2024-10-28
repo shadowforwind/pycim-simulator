@@ -70,7 +70,7 @@ The simplest way of familiarize with the pycim-simulator is by exploring the dem
 
 ## How to contribute or contact us
 
-Thanks for your interest in the project! If you have a question or want to discuss something, feel free to send an email to [Peixiang Li]<peixiangli@quanta.org.cn>, [Dongyang Wang](dongyangwang@quanta.org.cn), or to [Junjie Wu](junjiewu@nudt.edu.cn).
+Thanks for your interest in the project! If you have a question or want to discuss something, feel free to send an email to <a href="peixiangli@quanta.org.cn">Peixiang Li</a>, [Dongyang Wang](dongyangwang@quanta.org.cn), or to [Junjie Wu](junjiewu@nudt.edu.cn).
 
 ## How to cite
 
