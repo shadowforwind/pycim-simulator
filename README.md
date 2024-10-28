@@ -15,7 +15,7 @@ The following packages are required by the installation:
 The first step is cloning the repository:
 
 ```python
-git clone https://github.com/shadowforwind/simulator.git
+git clone https://github.com/shadowforwind/pycim-simulator.git
 ```
 
 Then, install the following packages:
