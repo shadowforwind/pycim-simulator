@@ -1,4 +1,4 @@
-# PyCIM simulator
+# PyCIM
 
 PyCIM is the first simulator that can produce the dynamic behavior of CIM. PyCIM effectively capture some characteristic phenomena of DOPO and CIM, including a spontaneous symmetry breaking, threshold behavior, gain saturation, and the process of CIM solving MAX-CUT problems. Additionally, it is built-in time-varying coupling strengths and pump schedules. Moreover, PyCIM can be used for analyzing the impact of parameters on the performance of CIM, and guiding the design and optimization of actual physical systems.
 
@@ -76,4 +76,4 @@ Thanks for your interest in the project! If you have a question or want to discu
 
 When using pycim simulator for research projects, please cite:
 
-Li, P., Cheng, H., Liu, Y., Wang, D., Wu, J. (2024). PyCIM: A Python Framework for the Dynamics of Coherent Ising Machine. In: Huang, DS., Zhang, C., Guo, J. (eds) Advanced Intelligent Computing Technology and Applications. ICIC 2024. Lecture Notes in Computer Science, vol 14871. Springer, Singapore. https://doi.org/10.1007/978-981-97-5609-4_15
+Li, P., Cheng, H., Liu, Y., Wang, D., Wu, J. (2024). _PyCIM: A Python Framework for the Dynamics of Coherent Ising Machine_. In: Huang, DS., Zhang, C., Guo, J. (eds) Advanced Intelligent Computing Technology and Applications. ICIC 2024. Lecture Notes in Computer Science, vol 14871. Springer, Singapore. https://doi.org/10.1007/978-981-97-5609-4_15
