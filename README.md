@@ -52,3 +52,8 @@ pip install -r requirements.txt
         │  │  getIsingEnergy.py
         │  │  __init__.py
 ```
+
+## Reference
+
+Refer to "PyCIM: A Python Framework for the Dynamics of Coherent Ising Machine".
+Link to https://link.springer.com/chapter/10.1007/978-981-97-5609-4_15
