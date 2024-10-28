@@ -1,6 +1,6 @@
 # PyCIM simulator
 
-PyCIM is the first simulator that can produce the dynamic behavior of CIM. PyCIM effectively capture some characteristic phenomena of DOPO and CIM, including a spontaneous symmetry breaking, threshold behavior, gain saturation, and the process of CIM solvingMAX-CUT problems. Additionally, it is built-in time-varying coupling strengths and pump schedules. Moreover, PyCIM can be used for analyzing the impact of parameters on the performance of CIM, and guiding the design and optimization of actual physical systems.
+PyCIM is the first simulator that can produce the dynamic behavior of CIM. PyCIM effectively capture some characteristic phenomena of DOPO and CIM, including a spontaneous symmetry breaking, threshold behavior, gain saturation, and the process of CIM solving MAX-CUT problems. Additionally, it is built-in time-varying coupling strengths and pump schedules. Moreover, PyCIM can be used for analyzing the impact of parameters on the performance of CIM, and guiding the design and optimization of actual physical systems.
 
 ## Requirements
 
@@ -64,13 +64,13 @@ pip install -r requirements.txt
         │  │  __init__.py
 ```
 
-## Getting started with Intel-QS
+## Getting started with pycim
 
 The simplest way of familiarize with the pycim-simulator is by exploring the demo case provided in the file ''display.ipynb''. The file ''display.ipynb'' provides step-by-step description of the main commands to: initialize input, transform model, single simulation, result measurement, or solving the Max-Cut problem.
 
 ## How to contribute or contact us
 
-Thanks for your interest in the project! If you have a question or want to discuss something, feel free to send an email to <a href="peixiangli@quanta.org.cn">Peixiang Li</a>, [Dongyang Wang](dongyangwang@quanta.org.cn), or to [Junjie Wu](junjiewu@nudt.edu.cn).
+Thanks for your interest in the project! If you have a question or want to discuss something, feel free to send an email to <a href="peixiangli@quanta.org.cn">Peixiang Li</a>, [Dongyang Wang](mailto:dongyangwang@quanta.org.cn), or to [Junjie Wu](junjiewu@nudt.edu.cn).
 
 ## How to cite
 
