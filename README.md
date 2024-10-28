@@ -55,6 +55,4 @@ pip install -r requirements.txt
 
 ## Reference
 
-Refer to "PyCIM: A Python Framework for the Dynamics of Coherent Ising Machine".
-
-Link to https://link.springer.com/chapter/10.1007/978-981-97-5609-4_15
+Li, P., Cheng, H., Liu, Y., Wang, D., Wu, J. (2024). PyCIM: A Python Framework for the Dynamics of Coherent Ising Machine. In: Huang, DS., Zhang, C., Guo, J. (eds) Advanced Intelligent Computing Technology and Applications. ICIC 2024. Lecture Notes in Computer Science, vol 14871. Springer, Singapore. https://doi.org/10.1007/978-981-97-5609-4_15
