@@ -13,3 +13,41 @@ git clone https://github.com/shadowforwind/simulator.git
 cd simulator
 pip install -r requirements.txt
 ```
+
+## Catalog
+
+└─simulator
+    │  architecture.png
+    │  display.ipynb
+    │  README.md
+    │  requirements.txt
+    │
+    └─pycim
+        │  analyzer.py
+        │  competitor.py
+        │  sampler.py
+        │  __init__.py
+        │
+        ├─data
+        │  │  128.txt
+        │  │  20.txt
+        │
+        ├─simulation
+        │  │  device.py
+        │  │  setup.py
+        │  │  simulate.py
+        │  │  solver.py
+        │  │  __init__.py
+        │  │
+        │  ├─model
+        │  │  │  c_number.py
+        │  │  │  discrete.py
+        │  │  │  meanFiled.py
+        │  │  │  __init__.py
+        │
+        ├─utils
+        │  │  const.py
+        │  │  file_J.py
+        │  │  getIsingEnergy.py
+        │  │  __init__.py
+        
