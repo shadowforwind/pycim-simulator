@@ -8,9 +8,9 @@ To use the simulator, Python 3.7.7 or above is required.
 
 The following packages are required by the installation:
 
-` matplotlib==3.5.3
-` numpy==1.21.5
-` scipy==1.7.3
+* matplotlib==3.5.3
+* numpy==1.21.5
+* scipy==1.7.3
 
 The first step is cloning the repository:
 
@@ -70,7 +70,7 @@ The simplest way of familiarize with the pycim-simulator is by exploring the dem
 
 ## How to contribute or contact us
 
-Thanks for your interest in the project! If you have a question or want to discuss something, feel free to send an email to [Peixiang Li](peixiangli@quanta.org.cn), [Dongyang Wang](dongyangwang@quanta.org.cn), or to [Junjie Wu](junjiewu@nudt.edu.cn).
+Thanks for your interest in the project! If you have a question or want to discuss something, feel free to send an email to [Peixiang Li]<peixiangli@quanta.org.cn>, [Dongyang Wang](dongyangwang@quanta.org.cn), or to [Junjie Wu](junjiewu@nudt.edu.cn).
 
 ## How to cite
 
