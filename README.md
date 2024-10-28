@@ -68,7 +68,7 @@ pip install -r requirements.txt
 
 The simplest way of familiarize with the pycim-simulator is by exploring the demo case provided in the file ''display.ipynb''. The file ''display.ipynb'' provides step-by-step description of the main commands to: initialize input, transform model, single simulation, result measurement, or solving the Max-Cut problem.
 
-## How to contribute or contact us
+## How to contact us
 
 Thanks for your interest in the project! If you have a question or want to discuss something, feel free to send an email to [Peixiang Li](mailto:peixiangli@quanta.org.cn), [Dongyang Wang](mailto:dongyangwang@quanta.org.cn), or to [Junjie Wu](mailto:junjiewu@nudt.edu.cn).
 
