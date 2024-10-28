@@ -16,12 +16,12 @@ The first step is cloning the repository:
 
 ```python
 git clone https://github.com/shadowforwind/simulator.git
-cd simulator
 ```
 
 Then, install the following packages:
 
 ```python
+cd pycim-simulator
 pip install -r requirements.txt
 ```
 
