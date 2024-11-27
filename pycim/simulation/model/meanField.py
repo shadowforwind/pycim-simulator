@@ -9,7 +9,7 @@ from ...utils import const
 from ...utils.file_J import read_J
 from ...utils.getIsingEnergy import Ising
 
-def RK45meanFiled(phyInput , applInput):
+def RK45meanField(phyInput , applInput):
 
     # Physical layer input
     # PPLN length： m

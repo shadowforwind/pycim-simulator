@@ -33,7 +33,9 @@ def getSolution(sol_info: np.ndarray,setup):
     find_max_time = np.argmax(cut_value)
     opt_sol = sign_value[:,find_max_time]
     return opt_sol
-# Classification configuration of optimal solution (c-number model)
+# Classification configuration of optimal solution (c-number model) 
+# Note: The classification configuration obtained by the 
+# c-number model includes in-phase and quadrature components.
 @getSolution.register 
 def _(sol_info: scipy.integrate._ivp.ivp.OdeResult,setup):
     c = sol_info.y
@@ -41,7 +43,7 @@ def _(sol_info: scipy.integrate._ivp.ivp.OdeResult,setup):
     sign_value = np.sign(c)
     cut_value = -0.5 * Ising(setup.couple_matrix, sign_value) - 0.25 * np.sum(setup.couple_matrix)
     find_max_time = np.argmax(cut_value)
-    opt_sol = sign_value[find_max_time]
+    opt_sol = sign_value[:,find_max_time]
     return opt_sol
 # The accuracy of max_cut and based_cut obtained through simulation (discrete model)
 @singledispatch   
@@ -108,7 +110,7 @@ def cutvalue_graph(sol_info: np.ndarray,setup):
 def _(sol_info: scipy.integrate._ivp.ivp.OdeResult,setup):
     c = sol_info.y
     x = sol_info.t
-    sign_value = np.sign(c[:,:setup.round_number - 1])
+    sign_value = np.sign(c)
     ising_energy = Ising(setup.couple_matrix , sign_value)
     cut_value = -0.5 * Ising(setup.couple_matrix, sign_value) - 0.25 * np.sum(setup.couple_matrix)
     y1 = cut_value

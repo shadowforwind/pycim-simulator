@@ -48,7 +48,22 @@ def RK45Discrete(device , setup):
         if(sol_info.success == False):
             print("False!")
         Es = sol_info.y[0:N]
+        
+        ################## Debug processing after the occurrence of gain 0 in the discrete model####################
+        for i in range(len(Es[:N,-1])):
+            if(Es[i,-1] == 0):
+                tmp_sign = np.sign(Es[i,0])
+                Es[i,-1] = tmp_sign * noise_size * abs( np.random.normal(0, 0.5, 1) )
+        ##################                                          ####################        
+        
         sqrt_G_I[:N,k] = Es[:N,-1] / Es[:N,0]  # The gain obtained by PSA for the in-phase component in this round
+        
+        ################## Debug processing after the occurrence of gain 0 in the discrete model####################
+        for i in range(len(sqrt_G_I[:N,k])):
+            if(sqrt_G_I[i,k] == 0):
+                sqrt_G_I[i,k] = sqrt_G_I[i,k-1]
+        ##################                                          #################### 
+        
         N_I[:N,k] = noise_size * np.random.normal(0, 1, N) * np.sqrt(0.25*(2-eta)*(sqrt_G_I[:N,k]**2))
         c[:N,k+1] = sqrt_G_I[:N,k] * np.sqrt(eta) * c[:N,k] \
             + sqrt_G_I[:N,k] * intensity[k] * np.dot(c[:,k],J) + N_I[0:N,k]

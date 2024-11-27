@@ -143,7 +143,7 @@ def _(sol_info: scipy.integrate._ivp.ivp.OdeResult,setup):
     
     x = sol_info.t
     c = sol_info.y
-    sign_value = np.sign(c[:,:setup.round_number - 1])
+    sign_value = np.sign(c)
     ising_energy = Ising(setup.couple_matrix , sign_value)
     plt.plot(x,ising_energy)
     plt.xlabel('round number')

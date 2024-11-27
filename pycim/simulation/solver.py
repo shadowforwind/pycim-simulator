@@ -48,7 +48,7 @@ def _( device: device , setup , t_end ):
     sol_info = solve_ivp(f,[0,t_end],u,method='RK45',first_step=1,t_eval=np.linspace(0,t_end,t_end+1))
     return sol_info
 
-# meanFiled model
+# meanField model
 @RK45.register 
 def _(t_end : int , device , setup):
 
