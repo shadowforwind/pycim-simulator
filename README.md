@@ -11,6 +11,14 @@ The following packages are required by the installation:
 * matplotlib==3.5.3
 * numpy==1.21.5
 * scipy==1.7.3
+ 
+#### method 1:
+
+```python
+pip install pycim-simulator
+```
+
+#### method 2:
 
 The first step is cloning the repository:
 
