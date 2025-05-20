@@ -1,5 +1,8 @@
 import random
 import numpy as np
+from .utils import Ising
+import networkx as nx
+from scipy.sparse.linalg import eigsh
 
 
 def e_J(J):
@@ -135,5 +138,20 @@ def SG(J):
 
 
 # Heuristic algorithm that can guarantee at least xx approximation ratio
-def GW_SDP():
-    return
+def GW_SDP(J, n_iter=10):
+    G = nx.from_numpy_array(-J)
+    A = nx.to_numpy_array(G)
+    D = np.diag(A.sum(axis=1))
+    J = -nx.to_numpy_array(G)
+    L = D - A
+
+    for _ in range(n_iter):
+        eigenvalues, eigenvectors = eigsh(L, k=2, which='LA')
+
+        labels = np.sign(eigenvectors[:, 1])
+
+        L = D - A + np.outer(labels, labels)
+
+    sign_value = labels
+    cut_value = -0.5 * Ising(J, sign_value) - 0.25 * np.sum(J)
+    return cut_value
