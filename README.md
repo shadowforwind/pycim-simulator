@@ -67,6 +67,7 @@ pip install -r requirements.txt
         │
         ├─utils
         │  │  const.py
+        │  │  bias.py
         │  │  file_J.py
         │  │  getIsingEnergy.py
         │  │  __init__.py

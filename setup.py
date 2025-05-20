@@ -2,10 +2,10 @@ import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
- 
+
 setuptools.setup(
     name="pycim-simulator",
-    version="0.0.1",
+    version="0.1.0",
     author="peixiangli",
     author_email="peixiangli@quanta.org.cn",
     description="A Python Framework for the Dynamics of Coherent Ising Machine",

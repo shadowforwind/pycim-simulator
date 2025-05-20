@@ -12,6 +12,7 @@ from pycim import utils
 from pycim import competitor
 from pycim import sampler
 from .analyzer import *
+
 # from pycim.competitor import SA,SB,SG,GW_SDP
 # from pycim.sampler import getSolutionTime,getSolution,getAccuracy,getCutValue,cutvalue_graph
 
