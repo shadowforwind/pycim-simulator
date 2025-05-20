@@ -13,9 +13,5 @@ from pycim import competitor
 from pycim import sampler
 from .analyzer import *
 
-# from pycim.competitor import SA,SB,SG,GW_SDP
-# from pycim.sampler import getSolutionTime,getSolution,getAccuracy,getCutValue,cutvalue_graph
 
-# __all__ = ["SA","SB","SG","GW_SDP"]
-# __all__ +=["getSolutionTime","getSolution","getAccuracy","getCutValue","cutvalue_graph"]
-__all__ = ["simulation", "utils"]
+__all__ = ["simulation", "utils", "competitor", "sampler"]
