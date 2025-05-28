@@ -17,10 +17,8 @@ def bias_for_aux_spin(couple_mat, h_vector, N_aux=1):
 
 
 def get_offset(N_aux):
-    if N_aux == 1:
-        return -1
-    elif N_aux > 1:
-        return -(N_aux - 1) * N_aux / 2
+    assert N_aux > 0, "N_aux must be a positive integer"
+    return -(N_aux - 1) * N_aux / 2
 
 
 def min_energy_for_aux_spin(sol_info: np.ndarray, setup, N_aux):
