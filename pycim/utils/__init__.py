@@ -11,6 +11,7 @@ from .getIsingEnergy import Ising
 from .file_J import read_J, tmp_read_J
 from . import const
 from .bias import bias_for_aux_spin, bias_for_non_aux_spin, min_energy_for_aux_spin
+from .param_optimizer import get_optimized_fixed_pump, get_optimized_eta
 
 __all__ = [
     "Ising",
@@ -20,4 +21,6 @@ __all__ = [
     'bias_for_aux_spin',
     'bias_for_non_aux_spin',
     'min_energy_for_aux_spin',
+    'get_optimized_fixed_pump',
+    'get_optimized_eta',
 ]
